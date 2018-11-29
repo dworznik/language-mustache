@@ -51,27 +51,27 @@
       }
     ]
   'block-comment':
-    'begin': '{{!--'
+    'begin': '{!--'
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.comment.mustache'
-    'end': '--}}'
+    'end': '--}'
     'endCaptures':
       '0':
         'name': 'punctuation.definition.comment.mustache'
     'name': 'comment.block.mustache'
   'inline-comment':
-    'begin': '{{!'
+    'begin': '{!'
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.comment.mustache'
-    'end': '}}'
+    'end': '}'
     'endCaptures':
       '0':
         'name': 'punctuation.definition.comment.mustache'
     'name': 'comment.block.mustache'
   'block-expression-start':
-    'begin': '{{([#^])\\s*([\\w\\.]*)'
+    'begin': '{([#^])\\s*([\\w\\.]*)'
     'beginCaptures':
       '0':
         'name': 'entity.name.tag.mustache'
@@ -79,13 +79,13 @@
         'name': 'punctuation.definition.block.begin.mustache'
       '2':
         'name': 'entity.name.function.mustache'
-    'end': '\\s*(}})'
+    'end': '\\s*(})'
     'endCaptures':
       '1':
         'name': 'entity.name.tag.mustache'
     'name': 'meta.tag.template.mustache'
   'block-expression-end':
-    'begin': '{{(/)\\s*([\\w\\.]*)'
+    'begin': '{(/)\\s*([\\w\\.]*)'
     'beginCaptures':
       '0':
         'name': 'entity.name.tag.mustache'
@@ -93,21 +93,21 @@
         'name': 'punctuation.definition.block.end.mustache'
       '2':
         'name': 'entity.name.function.mustache'
-    'end': '\\s*(}})'
+    'end': '\\s*(})'
     'endCaptures':
       '1':
         'name': 'entity.name.tag.mustache'
     'name': 'meta.tag.template.mustache'
   'escape':
-    'begin': '{{{'
-    'end': '}}}'
+    'begin': '{{'
+    'end': '}}'
     'captures':
       '0':
         'name': 'entity.name.tag.mustache'
     'name': 'meta.tag.template.raw.mustache'
   'template':
-    'begin': '{{[<>]?'
-    'end': '}}'
+    'begin': '{[<>]?'
+    'end': '}'
     'captures':
       '0':
         'name': 'entity.name.tag.mustache'
